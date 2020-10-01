@@ -61,15 +61,17 @@
     }
 
     article:first-of-type td[style*="background-color: rgb(242, 242, 242)"],
-    article:first-of-type td[style*="background-color: rgb(238, 238, 238)"] {
+    article:first-of-type td[style*="background-color: rgb(238, 238, 238)"],
+    article:first-of-type td[bgcolor*="#F2F2F2"] {
         background-color: var(--bg-lighter) !important;
     }
 
-    article:first-of-type td[style*="background-color: rgb(221, 221, 221)"]  {
+    article:first-of-type td[style*="background-color: rgb(221, 221, 221)"] {
         background-color: var(--bg-lighter2) !important;
     }
 
-    article:first-of-type td[style*="background-color: rgb(102, 102, 102)"] {
+    article:first-of-type td[style*="background-color: rgb(102, 102, 102)"],
+    article:first-of-type td[bgcolor*="#D9D9D9"] {
         background-color: var(--bg-lighter3) !important;
     }
 
