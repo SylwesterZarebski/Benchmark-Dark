@@ -60,6 +60,10 @@
         color: inherit;
     }
 
+    article:first-of-type td[bgcolor*="#FFFFFF"] {
+        background-color: var(--bg-main) !important;
+    }
+
     article:first-of-type td[style*="background-color: rgb(242, 242, 242)"],
     article:first-of-type td[style*="background-color: rgb(238, 238, 238)"],
     article:first-of-type td[bgcolor*="#F2F2F2"] {
