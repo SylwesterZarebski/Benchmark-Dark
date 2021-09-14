@@ -25,6 +25,7 @@
   v1.2 - poprawki innych kolorów w tabelach
   v1.3 - listy
   v1.4 - Marketplace
+  v1.5 - poprawki kolorów w tabeli
 */
 @-moz-document domain("benchmark.pl") {
     /* Główne */
@@ -70,7 +71,8 @@
         background-color: var(--bg-lighter) !important;
     }
 
-    article:first-of-type td[style*="background-color: rgb(221, 221, 221)"] {
+    article:first-of-type td[style*="background-color: rgb(221, 221, 221)"],
+    article:first-of-type td[style*="background-color: rgb(204, 204, 204)"] {
         background-color: var(--bg-lighter2) !important;
     }
 
