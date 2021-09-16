@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Benchmark.pl - Dark mode
-@version      1.5
+@version      1.5.1
 @description  Benchmark.pl - Dark mode
 @homepageURL  https://github.com/SylwesterZarebski/Benchmark-Dark
 @updateURL    https://raw.githubusercontent.com/SylwesterZarebski/Benchmark-Dark/master/benchmark-dark.user.css
@@ -61,7 +61,8 @@
         color: inherit;
     }
 
-    article:first-of-type td[bgcolor*="#FFFFFF"] {
+    article:first-of-type td[bgcolor*="#FFFFFF"],
+    article:first-of-type td[style*="background-color: rgb(255, 255, 255)"] {
         background-color: var(--bg-main) !important;
     }
 
