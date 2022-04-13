@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Benchmark.pl - Dark mode
-@version      1.5.2
+@version      1.6.0
 @description  Benchmark.pl - Dark mode
 @homepageURL  https://github.com/SylwesterZarebski/Benchmark-Dark
 @updateURL    https://raw.githubusercontent.com/SylwesterZarebski/Benchmark-Dark/master/benchmark-dark.user.css
@@ -26,8 +26,9 @@
   v1.3 - listy
   v1.4 - Marketplace
   v1.5 - poprawki kolorów w tabeli
+  v1.6 - wyłączenie forum i innych subdomen
 */
-@-moz-document domain("benchmark.pl") {
+@-moz-document regexp("https?://(?:www\\.)?benchmark\\.pl.*") {
     /* Główne */
     body {
         background-color: var(--bg-main);
