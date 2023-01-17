@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Benchmark.pl - Dark mode
-@version      1.6.0
+@version      1.7.0
 @description  Benchmark.pl - Dark mode
 @homepageURL  https://github.com/SylwesterZarebski/Benchmark-Dark
 @updateURL    https://raw.githubusercontent.com/SylwesterZarebski/Benchmark-Dark/master/benchmark-dark.user.css
@@ -18,7 +18,6 @@
 @var color poll-main "Main Poll Color" #666
 @preprocessor default
 ==/UserStyle== */
-
 /* Version history:
   v1.0 - nowa odsłona 2019-07-03
   v1.1 - poprawki podstrony logowania
@@ -27,6 +26,7 @@
   v1.4 - Marketplace
   v1.5 - poprawki kolorów w tabeli
   v1.6 - wyłączenie forum i innych subdomen
+  v1.7 - dodanie plebiscytu
 */
 @-moz-document regexp("https?://(?:www\\.)?benchmark\\.pl.*") {
     /* Główne */
@@ -189,5 +189,24 @@
 
     .sectionSpec .specification ul li div:last-of-type {
         color: var(--text-main);
+    }
+
+    /* Plebiscyt */
+    .global-preamble__header p,
+    .plebiscite__catnav a {
+        color: inherit;
+    }
+
+    .plebiscite__result-hint>.container,
+    .plebiscite__voting-category>.container {
+        background-color: var(--bg-lighter);
+    }
+
+    .plebiscite__result-hint-container {
+        background-color: var(--bg-lighter2);
+    }
+
+    .plebiscite__result-graph-base {
+        background-color: var(--bg-lighter3);
     }
 }
